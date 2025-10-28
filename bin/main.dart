@@ -30,6 +30,20 @@ void main() {
       print('$n bukan bilangan prima');
     }
 
+    //Tambahan baru: Menampilkan semua bilangan prima dari 1 hingga n
+    print('\nBilangan prima dari 1 hingga $n:');
+    for (int i = 2; i <= n; i++) {
+      bool isPrima = true;
+      for (int j = 2; j <= i ~/ 2; j++) {
+        if (i % j == 0) {
+          isPrima = false;
+          break;
+        }
+      }
+      if (isPrima) stdout.write('$i ');
+    }
+    print('');
+
     // Perulangan untuk menghitung faktorial
     int faktorial = 1;
     for (int i = 1; i <= n; i++) {
