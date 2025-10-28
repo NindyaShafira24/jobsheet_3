@@ -37,7 +37,16 @@ void main() {
     }
 
     print('Nilai faktorial dari $n adalah: $faktorial');
+  
+    // Tambahan baru: faktorial versi while
+    int faktorialWhile = 1;
+    int i = 1;
+    while (i <= n) {
+      faktorialWhile *= i;
+      i++;
+    }
+    print('Nilai faktorial (versi while) dari $n adalah: $faktorialWhile');
   }
-
+  
   print('\n=== Program Selesai ===');
 }
